@@ -1,0 +1,40 @@
+{
+	"name": "canvacord-gif",
+	"version": "1.0.0",
+	"description": "Render GIFs for Canvacord using worker threads.",
+	"keywords": [
+		"canvacord",
+		"gif",
+		"encoder",
+		"renderer"
+	],
+	"homepage": "https://github.com/zijipia/canvacord-gif#readme",
+	"bugs": {
+		"url": "https://github.com/zijipia/canvacord-gif/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zijipia/canvacord-gif.git"
+	},
+	"license": "ISC",
+	"author": "Ziji",
+	"type": "commonjs",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"prepare": "npm run build"
+	},
+	"dependencies": {
+		"canvacord": "^6.0.4",
+		"gif-encoder-2": "^1.0.5",
+		"jimp": "^1.6.0",
+		"omggif": "^1.0.10"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/omggif": "^1.0.5",
+		"typescript": "^5.0.0"
+	}
+}
